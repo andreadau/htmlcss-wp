@@ -107,6 +107,8 @@ body {
   text-decoration: underline;
 }
 
+/* /Main pagina */
+
 main {
  margin-top: 20px;
 }
@@ -117,7 +119,6 @@ main {
   width: 21%;
   border-radius: 10px;
 }
-
 
 .sidebar-center{
   height: 400px;
@@ -130,8 +131,8 @@ main {
   width: 21%;
 }
 
+/* Parte sinistra main*/
 .box-sinistra{
-  height: 100%;
   width: 100%;
 }
 
@@ -139,26 +140,34 @@ main {
   font-size: 2.5em;
   color: orange;
   padding-left: 0.2em;
+  padding-top: 0.2em;
 }
 
 .side-left-text {
   width: 60%;
   padding-left: 10px;
-  padding-top: 5px;
+  padding-top: 10px;
   overflow: hidden;
 }
 
 .box-sinistra a {
   padding: 10px 10px;
-  display: inline-block;
   text-decoration: none;
   color: rgb(34, 136, 20);
 }
 
-.box-sinistra ul > li  {
-  list-style: none;
+.box-sinistra li a:hover {
+  text-decoration: underline;
+  background-color: gray;
 }
 
+.box-sinistra ul > li  {
+  list-style: none;
+  display: inline-block;
+  padding: 9px;
+}
+
+  /* Parte centrale main */
 .box-centro{
   width: 100%;
   background: white;
@@ -168,11 +177,14 @@ main {
 .box-centro h1 {
   padding: 15px;
   padding-top: 20px;
+  text-shadow: 2px 2px lightgray;
 }
 
 .box-centro p {
   padding: 15px;
 }
+
+/* Parte destra main */
 
 .box-destra{
   height: 455px;
@@ -192,25 +204,61 @@ main {
   overflow-y: hidden;
 }
 
-main::after{
-  content: "";
-  display: table;
-  clear: both;
-}
 
 aside {
   line-height: 1.8em;
 }
 
+ /* Clear */
+
+main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
 aside::after{
   content: "";
   display: table;
   clear: both;
 }
+ /* /Main pagina */
+ /* Footer Pagina */
 
 .footer{
   height: 150px;
   width: auto;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  position: relative;
 }
+
+.footer p {
+  text-align: center;
+  color: lightgray;
+}
+
+.footer hr {
+  border: 1px inset lightgray;
+}
+
+.footer i {
+  width: 33%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 3em;
+  color: lightgray;
+}
+
+.fb:hover {
+  color: blue;
+}
+
+.insta:hover {
+  color: purple;
+}
+
+.git:hover {
+  color: black;
+}
+/* Footer Pagina */
