@@ -84,7 +84,7 @@ body {
   list-style: none;
 }
 
-ul > li {
+.navbar ul > li {
   display: inline-block;
   text-transform: uppercase;
   position: relative;
@@ -95,7 +95,7 @@ ul > li {
   color: white;
 }
 
- a {
+ .navbar a {
   width: 100%;
   height: 100%;
   display: inline-block;
@@ -112,33 +112,66 @@ main {
 }
 
 .sidebar-left{
-  height: 470px;
-  width: 16%;
+  height: 100%;
+  background: white;
+  width: 21%;
+  border-radius: 10px;
 }
+
 
 .sidebar-center{
   height: 400px;
-  width: 60%;
+  width: 50%;
   margin: 0 4%;
 }
 
 .sidebar-right{
   width: 455px;
-  width: 16%;
+  width: 21%;
 }
 
 .box-sinistra{
   height: 100%;
   width: 100%;
+}
+
+.box-sinistra i {
+  font-size: 2.5em;
+  color: orange;
+  padding-left: 0.2em;
+}
+
+.side-left-text {
+  width: 60%;
+  padding-left: 10px;
+  padding-top: 5px;
+  overflow: hidden;
+}
+
+.box-sinistra a {
+  padding: 10px 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(34, 136, 20);
+}
+
+.box-sinistra ul > li  {
+  list-style: none;
+}
+
+.box-centro{
+  width: 100%;
   background: white;
   border-radius: 10px;
 }
 
-.box-centro{
-  height: 100%;
-  width: 100%;
-  background: white;
-  border-radius: 10px;
+.box-centro h1 {
+  padding: 15px;
+  padding-top: 20px;
+}
+
+.box-centro p {
+  padding: 15px;
 }
 
 .box-destra{
@@ -149,7 +182,27 @@ main {
   margin-bottom: 50px;
 }
 
+.box-destra h1 {
+  padding: 15px;
+  padding-top: 20px;
+}
+
+.box-destra p {
+  padding: 15px;
+  overflow-y: hidden;
+}
+
 main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+aside {
+  line-height: 1.8em;
+}
+
+aside::after{
   content: "";
   display: table;
   clear: both;
