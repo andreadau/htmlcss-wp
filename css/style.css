@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* /utility */
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+/* utility */
+
+body {
+  background-image: url("../img/natural-default-pattern.png");
+  width: 60vw;
+  height: 1000px;
+  margin: auto;
+  font-family: 'Montserrat',Arial,Helvetica,sans-serif;
+  font-weight: 400;
+}
+
+.container-header {
+  width: 100%;
+  height: 35%;
+  background-color: rgb(80, 71, 65);
+  margin-top: 2%;
+}
+
+.header-img {
+  width: 100%;
+  height: 85%;
+  border: 10px solid white;
+  background-size: cover;
+  position: relative;
+  background-image: url("../img/natural-default-header.jpg");
+}
+
+.header-text {
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-text h1 {
+  font-size: 1em;
+  color: white;
+}
+
+.header-logo {
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  z-index: 1000;
+  position: relative;
+}
+
+.logo {
+  width: 368px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+}
+
+.navbar {
+  background-color: rgb(80, 71, 65);
+  height: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar ul {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+}
+
+ul > li {
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+ a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.navbar li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+}
+
+main {
+ margin-top: 20px;
+}
+
+.sidebar-left{
+  height: 470px;
+  width: 16%;
+}
+
+.sidebar-center{
+  height: 400px;
+  width: 60%;
+  margin: 0 4%;
+}
+
+.sidebar-right{
+  width: 455px;
+  width: 16%;
+}
+
+.box-sinistra{
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+}
+
+.box-centro{
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+}
+
+.box-destra{
+  height: 455px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer{
+  height: 150px;
+  width: auto;
+  background-color: white;
+  border-radius: 15px;
+}
